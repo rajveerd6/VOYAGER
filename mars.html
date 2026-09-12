@@ -1,0 +1,422 @@
+<html>
+    <head>
+        <title>MARS</title>
+        <style>
+            
+* {
+    box-sizing: border-box; 
+}
+
+.info-grid {
+    
+     display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    padding: 40px;
+    max-width: 1600px; 
+    margin: 0 auto; 
+}
+.infor {
+    background-color: black;
+}
+
+
+
+.planet-card {
+    background-color: #1e1e1e; 
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    color: #f0f0f0;
+    
+    
+    border-bottom: 1px solid black; 
+    padding-bottom: 15px; 
+    margin-bottom: 0; 
+}
+
+.header .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ff9900; 
+}
+
+.header h2 {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+
+.description {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-top: 15px; 
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+
+
+.info-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.info-row {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #2a2a2a; 
+    border-radius: 6px; 
+}
+
+.info-row .key {
+    font-weight: 400;
+    color: #c0c0c0; 
+}
+
+.info-row .value {
+    font-weight: 600;
+    color: #ffffff; 
+    text-align: right;
+}
+
+
+.info-row:hover {
+    background-color: #333333;
+    transition: background-color 0.2s;
+}
+
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+}
+nav {
+     background-color: black;
+     color: white;
+    font-size:20px;
+    text-align: right;
+            }
+nav a {
+       text-decoration : none;
+        color : white;
+        display: inline-block;
+        padding : 5px 20px;
+        padding-top: 10px;
+            }
+nav a:hover {
+            background-color : gray;
+            }
+
+
+
+.planet .content {
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.planet .content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.planet .content .tagline {
+    font-size: 18px;
+    color: #cfcfcf;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.content {
+    padding-bottom : 60px;
+}
+
+
+.explore-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #0059ff, #0099ff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #0066ff;
+    transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+    transform: scale(1.05);
+}
+
+
+.planet-image img {
+    height: 500px;
+    width: auto;
+   }
+
+             h1 {
+                color: white;
+                font-family: "Verdana", sans-serif;
+                font-size: 32px;
+                text-align: center;
+            }
+            pre {
+                color: white;
+                font-family: 'Verdana', sans-serif;
+                font-size: 16px;
+                text-align: center;
+            }
+            hr {
+                color-scheme: white;
+                width : 80vw;
+
+            }
+             .planet {
+    min-height: 95vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 40px;
+}
+.infor {
+    background-color: black;
+}
+
+.info-grid {
+    background-color: black;  
+}
+
+
+body {
+    background-color: #000000;  
+}
+ nav img {
+                height: 90px;
+                float:left;
+                padding: 0px 20px;
+            }
+            nav .img{
+                position:fixed;
+            } 
+            .planet {
+                padding-right: 180px;
+            }
+        </style>
+    </head>
+    <body>
+          <nav>
+            <img src="logo.png">
+             <a href="main.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="login.html">LOG IN</a>
+        </nav>
+         <div class="planet">
+    <div class="content">
+        <h1>DISCOVER MARS</h1>
+        <p class="tagline">
+            Step into the world of the Red Planet.<br>
+Uncover its rust, craters, polar caps, and the secrets of its ancient rivers.
+        </p>
+        <button class="explore-btn">Start Exploring →</button>
+    </div>
+
+    <div class="planet-image">
+        <img src="marshalf.png" alt="Mars">
+    </div>
+</div>
+<br><br><br>
+<div class="infor">
+        <h1>Start The Exploration Journey Of Mars</h1>
+        <pre>A comprehensive guide to the Red Planet. Mars has fascinated humans for thousands of years and 
+    represents our best hope for establishing a human presence beyond Earth. With ancient 
+            riverbeds,towering volcanoes, and potential signs of past life, 
+            Mars continues to reveal its secrets.</pre><br><hr>
+        </div>
+
+        <div class="info-grid">
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">🔍</span> <h2>Overview</h2>
+        </div>
+        <p class="description">
+           Mars is the fourth planet from the Sun and Earth's outer neighbor. Often called the Red Planet due to iron oxide on its surface, 
+           Mars has captivated humanity for millennia and is the primary target for human exploration.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Planet Type</span><span class="value">Terrestrial (Rocky)</span></div>
+            <div class="info-row"><span class="key">Position</span><span class="value">4th from the Sun</span></div>
+            <div class="info-row"><span class="key">Discovery</span><span class="value">Known since ancient times</span></div>
+            <div class="info-row"><span class="key">Named After</span><span class="value">Roman god of war</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">📏</span> <h2>Dimensions & Size</h2>
+        </div>
+        <p class="description">
+            Mars is about half the size of Earth. Despite being smaller, it has some of the most spectacular geological features in the solar system, 
+            including the largest volcano and canyon.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Diameter</span><span class="value">6,792 km (4,220 mi)</span></div>
+            <div class="info-row"><span class="key">Equatorial Circumference</span><span class="value">21,344 km</span></div>
+            <div class="info-row"><span class="key">Volume</span><span class="value">163,115,609,799  km<sup>3</sup></span></div>
+            <div class="info-row"><span class="key">Earth Comparison</span><span class="value">0.53x Earths across diameter</span></div>
+            <div class="info-row"><span class="key">Volume Comparison</span><span class="value">0.15x Earth Volume</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">⚖</span> <h2>Mass & Gravity</h2>
+        </div>
+        <p class="description">
+            Mars has about 38% of Earth's gravity. If you weigh 100 pounds on Earth, you would weigh only 38 pounds on Mars. This lower gravity would make it easier to move around 
+            but poses challenges for long-term human health.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Mass</span><span class="value"> 6.417 x 10<sup>23</sup> kg</span></div>
+            <div class="info-row"><span class="key">Earth Mass Comparison</span><span class="value">0.107x Earth's mass (about 10%)</span></div>
+            <div class="info-row"><span class="key">Density</span><span class="value"> 3.93 g/cm<sup>3</sup></span></div>
+            <div class="info-row"><span class="key">Surface Gravity</span><span class="value">3.71 m/s<sup>2</sup></span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#9925;</span> <h2>Atmosphere & Weather</h2>
+        </div>
+        <p class="description">
+            Jupiter's atmosphere is a chaotic laboratory of extreme weather, with powerful storms, lightning, and auroras. The planet has no solid surface beneath its thick atmosphere.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Composition</span><span class="value">95% CO₂, 3% Nitrogen, 1.6% Argon</span></div>
+            <div class="info-row"><span class="key">Atmospheric Pressure </span><span class="value">0.6% of Earth's pressure</span></div>
+            <div class="info-row"><span class="key">Weather Events</span><span class="value">Dust storms, dust devils, clouds</span></div>
+            <div class="info-row"><span class="key">Wind Speeds</span><span class="value">Up to 100 km/h (62 mph)</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">🌪</span> <h2>Olympus Mons</h2>
+        </div>
+        <p class="description">
+            Olympus Mons is the tallest volcano and mountain in the solar system. It's so large that if you stood on its summit, its base would extend beyond the horizon. 
+            The volcano may still be active.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Type</span><span class="value">Shield volcano (largest in solar system)</span></div>
+            <div class="info-row"><span class="key">Height</span><span class="value">21.9 km (13.6 mi) - 2.5x Mt. Everest!</span></div>
+            <div class="info-row"><span class="key">Base Diametere</span><span class="value">600 km (similar to Arizona)</span></div>
+            <div class="info-row"><span class="key">Caldera</span><span class="value">80 km wide, 3 km deep</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#127777;</span> <h2>Temperature</h2>
+        </div>
+        <p class="description">
+            Mars is a cold desert world with extreme temperature variations. The thin atmosphere means temperatures can change dramatically between 
+            day and night. Mars has seasons similar to Earth due to its tilted axis.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Summer High</span><span class="value">20°C (68°F) at equator</span></div>
+            <div class="info-row"><span class="key">Winter Low</span><span class="value">-125°C (-193°F) at poles</span></div>
+            <div class="info-row"><span class="key">Average Temperature</span><span class="value">-63°C (-81°F)</span></div>
+            <div class="info-row"><span class="key">Seasons</span><span class="value">Has seasons like Earth (axial tilt)</span></div>
+        </div>
+    </div>
+
+         <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#127760;</span> <h2>Surface & Geology</h2>
+        </div>
+        <p class="description">
+            Mars's surface is a rust-colored desert covered with rocks, dust, and dramatic geological features. 
+            Evidence suggests Mars once had liquid water on its surface billions of years ago.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Surface Type</span><span class="value">Rocky with iron oxide (rust)</span></div>
+            <div class="info-row"><span class="key">Colour</span><span class="value">Red/orange from iron oxide</span></div>
+            <div class="info-row"><span class="key">Major Features</span><span class="value">Volcanoes, canyons, craters, ice caps</span></div>
+            <div class="info-row"><span class="key">Polar Ice Caps</span><span class="value">Water ice and dry ice (CO₂)</span></div>
+        </div>
+    </div>
+    
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#129667;</span> <h2>Rotation & Orbit</h2>
+        </div>
+        <p class="description">
+           A day on Mars (called a "sol") is remarkably similar to Earth's day. Mars also has a similar axial tilt to Earth, 
+           giving it four distinct seasons, though they last nearly twice as long.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Day Length</span><span class="value">24.6 hours (similar to Earth!)</span></div>
+            <div class="info-row"><span class="key">Year Length</span><span class="value">687 Earth days (1.88 Earth years)</span></div>
+            <div class="info-row"><span class="key">Distance from Sun</span><span class="value">228 million km (1.52 AU)</span></div>
+            <div class="info-row"><span class="key">Orbital Speed</span><span class="value">24.07 km/s</span></div>
+            <div class="info-row"><span class="key">Axial Tilt</span><span class="value">25.19° (very similar to Earth)</span> </div>
+        </div>
+    </div>
+
+   <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#127769;</span> <h2>Moons & Satellites</h2>
+        </div>
+        <p class="description">
+            Mars has two small, irregularly shaped moons named after the sons of the Roman god Mars: Phobos (fear) and Deimos (panic). 
+            They're likely captured asteroids and are much smaller than Earth's Moon
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Total Moons</span><span class="value">2 small moons</span></div>
+            <div class="info-row"><span class="key">Moon Name</span><span class="value">Phobos and Deimos</span></div>
+            <div class="info-row"><span class="key">First Successful Flyby</span><span class="value">Mariner 4 (1965)</span></div>
+            <div class="info-row"><span class="key">Orbiters</span><span class="value">Multiple active spacecraft</span></div>
+            <div class="info-row"><span class="key">Active Rovers</span><span class="value">Curiosity (2012), Perseverance (2021)</span> </div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#128167;</span> <h2>Water on Mars</h2>
+        </div>
+        <p class="description">
+            Mars once had abundant liquid water on its surface. Today, water exists as ice at the poles and underground.
+             Scientists have found evidence of seasonal water flows, raising hopes for potential life.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Current Water</span><span class="value">Ice at poles and underground</span></div>
+            <div class="info-row"><span class="key">Past Water</span><span class="value">Evidence of ancient rivers, lakes, ocean</span></div>
+            <div class="info-row"><span class="key">Subsurface Ice</span><span class="value">Detected by radar and landers</span></div>
+            <div class="info-row"><span class="key">Seasonal Flows</span><span class="value">Recurring slope lineae (possible brine)</span></div>
+            <div class="info-row"><span class="key">Polar Ice</span><span class="value">Permanent water ice caps</span> </div>
+        </div>
+</div>
+</body>
+</html>

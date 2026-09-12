@@ -1,0 +1,412 @@
+<html>
+    <head>
+        <title>MERCURY</title>
+        <style>
+            
+
+* {
+    box-sizing: border-box; 
+}
+
+.info-grid {
+    
+     display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    padding: 40px;
+    max-width: 1600px; 
+    margin: 0 auto; 
+}
+.infor {
+    background-color: black;
+}
+
+
+
+.planet-card {
+    background-color: #1e1e1e; 
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    color: #f0f0f0;
+    
+    
+    border-bottom: 1px solid black; 
+    padding-bottom: 15px; 
+    margin-bottom: 0; 
+}
+
+.header .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #ff9900; 
+}
+
+.header h2 {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+
+.description {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-top: 15px; 
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+
+
+.info-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.info-row {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 12px;
+    background-color: #2a2a2a; 
+    border-radius: 6px; 
+}
+
+.info-row .key {
+    font-weight: 400;
+    color: #c0c0c0; 
+}
+
+.info-row .value {
+    font-weight: 600;
+    color: #ffffff; 
+    text-align: right;
+}
+
+
+.info-row:hover {
+    background-color: #333333;
+    transition: background-color 0.2s;
+}
+
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+    }
+}
+nav {
+     background-color: black;
+     color: white;
+    font-size:20px;
+    text-align: right;
+            }
+nav a {
+       text-decoration : none;
+        color : white;
+        display: inline-block;
+        padding : 5px 20px;
+        padding-top: 10px;
+            }
+nav a:hover {
+            background-color : gray;
+            }
+
+
+
+.planet .content {
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.planet .content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: white;
+}
+
+.planet .content .tagline {
+    font-size: 18px;
+    color: #cfcfcf;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+.content {
+    padding-bottom : 60px;
+}
+
+
+.explore-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(90deg, #0059ff, #0099ff);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #0066ff;
+    transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+    transform: scale(1.05);
+}
+
+
+.planet-image img {
+    height: 500px;
+    width: auto;
+   }
+
+             h1 {
+                color: white;
+                font-family: "Verdana", sans-serif;
+                font-size: 32px;
+                text-align: center;
+            }
+            pre {
+                color: white;
+                font-family: 'Verdana', sans-serif;
+                font-size: 16px;
+                text-align: center;
+            }
+            hr {
+                color-scheme: white;
+                width : 80vw;
+
+            }
+             .planet {
+    min-height: 95vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 40px;
+}
+.infor {
+    background-color: black;
+}
+
+.info-grid {
+    background-color: black;  
+}
+
+
+body {
+    background-color: #000000;  
+}
+ nav img {
+                height: 90px;
+                float:left;
+                padding: 0px 20px;
+            }
+            nav .img{
+                position:fixed;
+            } 
+            .planet {
+                padding-right: 180px;
+            }
+        </style>
+    </head>
+    <body>
+          <nav>
+            <img src="logo.png">
+            <a href="main.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="login.html">LOG IN</a>
+        </nav>
+        <div class="planet">
+    <div class="content">
+        <h1>DISCOVER MERCURY</h1>
+        <p class="tagline">
+            Step into the scorching world of Mercury.<br>
+             Uncover its sun-baked dust, pockmarked craters, global magnetic field, and the secrets of its icy polar shadows.
+        </p>
+        <button class="explore-btn">Start Exploring →</button>
+    </div>
+
+    <div class="planet-image">
+        <img src="mercuryhalf.png" alt="Mercury">
+    </div>
+</div>
+<br><br><br>
+<div class="infor">
+        <h1>Start The Exploration Journey Of Mercury</h1>
+        <pre>Mercury, the fleet-footed, innermost planet of our solar system, is a world of extreme, volatile temperatures and a lunar-like, heavily cratered 
+            surface that challenges our understanding of planetary formation and provides a stark test for spacecraft 
+            attempting to study its massive iron core.</pre><br><hr>
+        </div>
+
+        <div class="info-grid">
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">🔍</span> <h2>Overview</h2>
+        </div>
+        <p class="description">
+            Mercury is the smallest planet in our solar system and the closest to the Sun. Despite being the nearest to our star, it's not the hottest planet - that title goes to Venus. Mercury is a world of extremes with scorching days and freezing nights.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Planet Type</span><span class="value">Terrestrial (Rocky)</span></div>
+            <div class="info-row"><span class="key">Position</span><span class="value">1st from the Sun (innermost planet)</span></div>
+            <div class="info-row"><span class="key">Discovery</span><span class="value">Known since ancient times</span></div>
+            <div class="info-row"><span class="key">Named After</span><span class="value">Roman messenger god (swift movement)</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">📏</span> <h2>Dimensions & Size</h2>
+        </div>
+        <p class="description">
+            Mercury is only slightly larger than Earth's Moon and is the smallest planet in our solar system. Despite its small size, Mercury is dense and compact, making it the second-densest planet after Earth.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Diameter</span><span class="value">4,879 km (3,032 mi)</span></div>
+            <div class="info-row"><span class="key">Equatorial Circumference</span><span class="value">15,329 km</span></div>
+            <div class="info-row"><span class="key">Volume</span><span class="value">60,827,208,742 km³</span></div>
+            <div class="info-row"><span class="key">Earth Comparison</span><span class="value">0.38x Earth diameter</span></div>
+            <div class="info-row"><span class="key">Size Rank</span><span class="value">Smallest planet (since Pluto's reclassification)</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">⚖</span> <h2>Mass & Gravity</h2>
+        </div>
+        <p class="description">
+            Mercury has the second-highest density of any planet due to its large iron core, which makes up about 75% of the planet's radius. On Mercury, you would weigh only 38% of your Earth weight.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Mass</span><span class="value">3.285 x 10²³ kg</span></div>
+            <div class="info-row"><span class="key">Earth Mass Comparison</span><span class="value">0.055x Earth's mass (5.5%)</span></div>
+            <div class="info-row"><span class="key">Density</span><span class="value"> 5.427 g/cm³ (2nd highest after Earth!)</span></div>
+            <div class="info-row"><span class="key">Surface Gravity</span><span class="value">3.7 m/s² (0.38× Earth)</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#9925;</span> <h2>Atmosphere (Exosphere)</h2>
+        </div>
+        <p class="description">
+          Mercury has essentially no atmosphere, only an exosphere made of atoms blasted off its surface by solar wind and micrometeorite impacts. This means no weather, no clouds, and no protection from space debris.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Composition</span><span class="value">Oxygen, Sodium, Hydrogen, Helium, Potassium</span></div>
+            <div class="info-row"><span class="key">Type</span><span class="value">Exosphere (extremely thin)</span></div>
+            <div class="info-row"><span class="key">Pressure</span><span class="value">~10⁻¹⁵ bar (virtually zero)</span></div>
+            <div class="info-row"><span class="key">Source</span><span class="value">Solar wind and radioactive decay</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">🌪</span> <h2>Major Discoveries</h2>
+        </div>
+        <p class="description">
+            Despite its proximity to the Sun, Mercury has water ice in permanently shadowed craters at its poles! Other discoveries include mysterious "hollows" (bright depressions), evidence that the planet has shrunk, and a weak but active magnetic field.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Water Ice</span><span class="value">Found in permanently shadowed polar craters</span></div>
+            <div class="info-row"><span class="key">Magnetic Field</span><span class="value">Unexpected discovery by Mariner 10</span></div>
+            <div class="info-row"><span class="key">Hollows</span><span class="value">Mysterious bright depressions on surface</span></div>
+            <div class="info-row"><span class="key">Volcanic Past</span><span class="value">Ancient volcanic plains discovered</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#127777;</span> <h2>Extreme Temperature</h2>
+        </div>
+        <p class="description">
+           Mercury experiences the most extreme temperature swings in the solar system - a whopping 610°C difference between day and night! Without an atmosphere to trap heat, temperatures plummet rapidly after sunset.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Daytime Temperature</span><span class="value">430°C (800°F)</span></div>
+            <div class="info-row"><span class="key">Nighttime Temperature</span><span class="value">-180°C (-290°F)</span></div>
+            <div class="info-row"><span class="key">Temperature Range</span><span class="value">610°C variation (largest in solar system!)</span></div>
+            <div class="info-row"><span class="key">Polar Craters</span><span class="value">Water ice in permanently shadowed regions</span></div>
+        </div>
+    </div>
+
+         <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#127760;</span> <h2>Surface & Geology</h2>
+        </div>
+        <p class="description">
+          Mercury's surface is heavily cratered like the Moon, preserving a 4-billion-year record of impacts. The planet has shrunk over time as its core cooled, creating enormous cliffs called scarps that run for hundreds of kilometers.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Surface Type</span><span class="value">Cratered, similar to the Moon</span></div>
+            <div class="info-row"><span class="key">Largest Crater</span><span class="value">Caloris Basin - 1,550 km diameter</span></div>
+            <div class="info-row"><span class="key">Composition</span><span class="value">Silicate rock and metal</span></div>
+            <div class="info-row"><span class="key">Volcanic Activity</span><span class="value">Ancient lava plains</span></div>
+        </div>
+    </div>
+    
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#129667;</span> <h2>Orbit & Speed</h2>
+        </div>
+        <p class="description">
+           Mercury zips around the Sun faster than any other planet at 47.87 km/s (107,000 mph)! Its orbit is also the most elliptical, taking it from 46 to 70 million km from the Sun. This helped prove Einstein's theory of relativity.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Distance from Sun </span><span class="value">57.9 million km (0.39 AU)</span></div>
+            <div class="info-row"><span class="key">Orbital Speed</span><span class="value">47.87 km/s (fastest planet!)</span></div>
+            <div class="info-row"><span class="key">Orbital Period</span><span class="value">87.97 Earth days</span></div>
+            <div class="info-row"><span class="key">Orbital Eccentricity</span><span class="value">0.206 (most elliptical orbit)</span></div>
+            <div class="info-row"><span class="key">Perihelion/Aphelion</span><span class="value">46-70 million km from Sun</span> </div>
+        </div>
+    </div>
+
+   <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#127769;</span> <h2>Moons & Satellites</h2>
+        </div>
+        <p class="description">
+           Mercury has no moons or natural satellites. Its proximity to the Sun and high orbital speed make it extremely difficult for Mercury to capture and hold onto a moon - the Sun's gravity would pull it away.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">Total Moons</span><span class="value">0 (no natural satellites)</span></div>
+            <div class="info-row"><span class="key">Why No Moon?</span><span class="value">Too close to Sun - Sun's gravity dominates</span></div>
+            <div class="info-row"><span class="key">Capture Difficulty</span><span class="value">High orbital speed prevents moon capture</span></div>
+            <div class="info-row"><span class="key">Unique Among</span><span class="value">Only Venus also has no moons (inner planets)</span></div>
+        </div>
+    </div>
+
+    <div class="planet-card">
+        <div class="header">
+            <span class="icon">&#128640;</span> <h2>Space Exploration</h2>
+        </div>
+        <p class="description">
+            Mercury is one of the least-explored planets due to the difficulty of reaching it. Getting into Mercury orbit requires slowing down tremendously against the Sun's gravity. BepiColombo will be only the third mission to visit.
+        </p>
+        <div class="info-rows">
+            <div class="info-row"><span class="key">First Flyby</span><span class="value">Mariner 10 (1974-75) - 3 Flybys</span></div>
+            <div class="info-row"><span class="key">First Orbit</span><span class="value">MESSENGER (2011-2015)</span></div>
+            <div class="info-row"><span class="key">Current Mission</span><span class="value">BepiColombo (ESA/JAXA, arriving 2025)</span></div>
+            <div class="info-row"><span class="key">Difficulty</span><span class="value">Hard to reach - requires precise gravity assists</span></div>
+            <div class="info-row"><span class="key">Missions Total</span><span class="value">Only 3 missions have visited</span> </div>
+        </div>
+</div>
+</body>
+</html>

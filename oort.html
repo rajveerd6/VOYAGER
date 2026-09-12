@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>Oort Cloud — Solar System Exploration</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+:root{
+  --bg: #000;
+  --panel: #0e0e0e;
+  --border: rgba(255,255,255,0.08);
+  --text: #dcdcdc;
+  --heading: #ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.page{
+  max-width: 1350px;
+  margin: 30px auto;
+  padding: 0 22px;
+}
+
+.header{
+  text-align: center;
+  padding: 30px 10px;
+  margin-bottom: 30px;
+}
+
+.header h1{
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.7rem;
+  letter-spacing: 3px;
+  color: var(--heading);
+}
+
+.header p{
+  width: 78%;
+  margin: 12px auto;
+  font-size: 1.08rem;
+  color: #c2c2c2;
+}
+
+.big-card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  transition: 0.3s ease;
+}
+
+.big-card:hover{
+  border-color: #ffffff;            
+  box-shadow: 0 0 20px #ffffff;      
+  transform: translateY(-5px);
+}
+
+.big-inner{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-inner img{
+  width: 45%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.card{
+  background: var(--panel);
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+}
+
+.card:hover{
+  border-color: #ffffff;             
+  box-shadow: 0 0 20px #ffffff;      
+  transform: translateY(-6px);
+}
+
+.card h2{
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  color: var(--heading);
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px){
+  .big-inner{
+    flex-direction: column;
+  }
+  .big-inner img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}
+nav {
+     background-color: black;
+     color: white;
+    font-size:20px;
+    text-align: right;
+            }
+nav a {
+       text-decoration : none;
+        color : white;
+        display: inline-block;
+        padding : 5px 20px;
+        padding-top: 10px;
+            }
+nav a:hover {
+            background-color : gray;
+            }
+            .header h1 {
+                color:#ff9900;
+            }
+             nav img {
+                height: 90px;
+                float:left;
+                padding: 0px 20px;
+            }
+            nav .img{
+                position:fixed;
+            } 
+</style>
+
+</head>
+<body>
+    <nav>
+       <img src="logo.png">
+            <a href="main.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="login.html">LOG IN</a>
+        </nav>
+<div class="page">
+
+  <div class="header">
+    <h1>Oort Cloud</h1>
+    <p>
+      The Oort Cloud is a vast spherical shell of icy bodies surrounding the Solar System,
+      marking the distant boundary of the Sun’s gravitational influence.
+    </p>
+  </div>
+
+  <div class="big-card">
+    <div class="big-inner">
+      <img src="oort.jpg" alt="Oort Cloud">
+
+      <div class="text">
+        <h2 style="font-family:Orbitron; font-size:2rem; margin-bottom:10px;">What is the Oort Cloud?</h2>
+        <p>
+          The Oort Cloud is believed to contain trillions of icy objects — remnants from the early
+          Solar System that were pushed outward by gravitational interactions with the giant planets.
+        </p>
+        <p>
+          It represents the outermost structure of the Solar System, extending almost halfway to the
+          nearest star.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <h2>Distance</h2>
+      <p>
+        Begins near 2,000 AU and extends up to 100,000 AU — nearly 1.5 light-years from the Sun.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Shape</h2>
+      <p>
+        A massive spherical cloud surrounding the Solar System in all directions.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Comet Origin</h2>
+      <p>
+        Long-period comets originate from here, disturbed by passing stars or galactic tides.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Composition</h2>
+      <p>
+        Icy bodies made of frozen methane, ammonia, water ice, and dust.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Discovery</h2>
+      <p>
+        Proposed by Dutch astronomer Jan Oort in 1950 to explain long-period comet behavior.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Visibility</h2>
+      <p>
+        Too distant, dark, and small to be directly observed with present-day technology.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Solar Boundary</h2>
+      <p>
+        Its outer edge marks the true end of the Solar System.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Nearby Stars</h2>
+      <p>
+        Passing stars like Proxima Centauri can influence Oort Cloud objects.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>

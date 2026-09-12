@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>Asteroid Belt & Kuiper Belt</title>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .section {
+    width: 85%;
+    background: #2e2e2e;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    flex-wrap: wrap;
+  }
+
+  .section:hover {
+    box-shadow: 0 0 25px white;
+  }
+
+  .text {
+    flex: 1;
+    min-width: 280px;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .image {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img {
+    width: 100%;
+    border-radius: 12px;
+    transform: scale(1);
+    float: right;
+    transition: 0.4s;
+  }
+
+  .image img:hover {
+    transform: scale(1.05);
+  }
+
+  .grid-section {
+    width: 85%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+  }
+
+  .grid-box {
+    background: #2e2e2e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    transition: 0.3s;
+  }
+
+  .grid-box:hover {
+    box-shadow: 0 0 25px white;
+  }
+
+  .grid-box img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: 0.4s;
+    transform: scale(1);
+  }
+
+  .grid-box img:hover {
+    transform: scale(1.05);
+  }
+h1 {
+    color:#d89b19;
+}
+nav {
+     background-color: black;
+     color: white;
+    font-size:20px;
+    text-align: right;
+            }
+nav a {
+       text-decoration : none;
+        color : white;
+        display: inline-block;
+        padding : 5px 20px;
+        padding-top: 10px;
+            }
+nav a:hover {
+            background-color : rgb(143, 142, 142);
+            }
+             nav .img{
+                position:fixed;
+            } 
+             nav img {
+                height: 90px;
+                float:left;
+                padding: 0px 20px;
+            }
+
+</style>
+</head>
+<body>
+    <nav>
+            <a href="main.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="login.html">LOG IN</a>
+        </nav>
+
+<h1>Asteroid Belt & Kuiper Belt</h1>
+
+<div class="section">
+  <div class="text">
+    <h2>The Asteroid Belt</h2>
+    <p>
+      "The Asteroid Belt lies between Mars and Jupiter. It contains millions of rocky bodies, from tiny grains to dwarf-planet-sized objects like Ceres. 
+      These objects are leftovers from the early solar system—material that never formed into a planet due to Jupiter’s strong gravitational influence. The belt's 
+      total mass is less than 4% of the Moon's, showing how much material was lost over time. While teeming with millions of objects, the average distance between them 
+      is huge, making collisions rare.
+    </p>
+    <p>Studying these asteroids helps scientists understand the birth and evolution of our solar system, with some even venturing closer to Earth as Near-Earth Objects. The Dawn mission, for example, 
+        provided detailed insights into Ceres and Vesta, revealing complex icy and rocky compositions." </p>
+  </div>
+  <div class="image">
+    <img src="asteroidbelt.jpg" alt="Asteroid Belt" />
+  </div>
+</div>
+
+<h1>Asteroid Belt Features</h1>
+<div class="grid-section">
+
+  <div class="grid-box">
+    <img src="ceres.jpg" alt="Ceres" />
+    <p>Ceres is the largest object in the Asteroid Belt and is classified as a dwarf planet.</p>
+  </div>
+
+  <div class="grid-box">
+    <img src="vesta.jpg" alt="Vesta" />
+    <p>Vesta is massive and shows signs of volcanic activity in its ancient past.</p>
+  </div>
+
+  <div class="grid-box">
+    <img src="asteroid.jpg" alt="Asteroid closeup" />
+    <p>Small asteroids are rocky and metal-rich, shaped by collisions over billions of years.</p>
+  </div>
+
+  <div class="grid-box">
+    <img src="kirkwood.jpg" alt="Kirkwood gaps" />
+    <p>Kirkwood gaps are regions in the main asteroid belt where asteroids are scarce, caused by Jupiter's powerful gravitational influence creating orbital resonances. 
+        When an asteroid is in orbital period, Jupiter's gravity repeatedly tugs on it, eventually perturbing its 
+        orbit and removing it from that location, leading to these distinct gaps. </p>
+  </div>
+
+</div>
+
+<div class="section">
+  <div class="text">
+    <h2>The Kuiper Belt</h2>
+    <p>
+      The Kuiper Belt lies beyond Neptune and is home to icy bodies, dwarf planets, and comets. It is similar to the
+      Asteroid Belt but far larger and colder. Famous objects include Pluto, Haumea, Makemake, and Eris.
+    </p>
+    <p>The Kuiper Belt, a vast, icy ring beyond Neptune, houses dwarf planets like Pluto, Haumea, Makemake, and Eris, plus countless icy bodies and comets, 
+        acting as remnants from the solar system's formation, a cold "third zone" much larger than the Asteroid Belt, containing frozen methane, ammonia, and water,
+         serving as a frontier for exploration and a source for comets, offering clues to our cosmic past. </p>
+  </div>
+  <div class="image">
+    <img src="kuiper.jpg" alt="Kuiper Belt">
+  </div>
+</div>
+
+<h1>Kuiper Belt Objects</h1>
+<div class="grid-section">
+
+  <div class="grid-box">
+    <img src="pluto.png" alt="Pluto" >
+    <p>Pluto is the most famous Kuiper Belt Object and a dwarf planet with icy mountains and frozen plains.</p>
+  </div>
+
+  <div class="grid-box">
+    <img src="eris.jpg" alt="Eris" >
+    <p>Eris is one of the most massive dwarf planets, even more massive than Pluto.</p>
+  </div>
+
+  <div class="grid-box">
+    <img src="makemake.jpg" alt="Makemake" >
+    <p>Makemake is a large dwarf planet in the Kuiper Belt, a ring of icy bodies beyond Neptune, it's the third-largest known object in the Kuiper Belt (after Pluto and Eris)</p>
+    
+  </div>
+
+  <div class="grid-box">
+    <img src="kuipersizes.jpg" alt="Kuiper sizes" >
+    <p>The Kuiper Belt contains thousands of icy bodies that stretch millions of kilometers beyond Neptune.</p>
+  </div>
+
+</div>
+
+</body>
+</html>

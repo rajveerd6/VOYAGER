@@ -1,0 +1,393 @@
+<html>
+<head>
+<title>Solar System Exploration</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 4px;
+        background:black;
+        font-family: "Nunito", sans-serif;
+        color: #d9ecff;
+    }
+
+    h1, h2 {
+        font-family: "Orbitron", sans-serif;
+        text-align: center;
+        color: #d89b19;
+        letter-spacing: 2px;
+    }
+
+    p {
+        max-width: 900px;
+        margin: 10px auto 30px;
+        line-height: 1.6;
+        font-size: 16px;
+        opacity: 0.95;
+    }
+
+    .planet-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+
+    .planet-card {
+        background: rgba(30, 30, 37, 0.65);
+        padding: 25px;
+        border-radius: 20px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        backdrop-filter: blur(6px);
+        transition: 0.3s;
+    }
+
+    .planet-card:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
+    }
+
+    .planet-card img {
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        transition: 0.3s;
+    }
+
+    .planet-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .planet-title {
+        font-family: "Orbitron";
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .horizontal-card {
+        max-width: 1050px;
+        background: rgba(25, 27, 34, 0.75);
+        border-radius: 20px;
+        padding: 25px;
+        margin: 40px auto;
+        display: flex;
+        gap: 25px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(5px);
+        transition: 0.3s;
+    }
+
+    .horizontal-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 25px rgba(0, 180, 255, 0.5);
+    }
+
+    .horizontal-card img {
+        width: 260px;
+        height: 260px;
+         border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .horizontal-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .horizontal-title {
+        font-family: "Orbitron";
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .two-card-row {
+        max-width: 1150px;
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .vertical-info-card {
+        background: rgba(25, 27, 34, 0.75);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        padding: 25px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+        transition: 0.3s;
+    }
+
+    .vertical-info-card:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 0 25px rgba(0, 170, 255, 0.45);
+    }
+
+    .vertical-info-card img {
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .vertical-info-title {
+        font-family: "Orbitron";
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width: 900px) {
+        .planet-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .two-card-row {
+            grid-template-columns: 1fr;
+        }
+        .horizontal-card {
+            flex-direction: column;
+            text-align: center;
+        }
+        .horizontal-card img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .planet-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .section {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .section p {
+        width: 80%;
+        margin: 10px auto 25px auto;
+        line-height: 1.7;
+        color: white;
+        font-size: 1rem;
+    }
+    .intro-box {
+        background: #000000;
+    }
+    nav {
+     background-color: black;
+     color: white;
+    font-size:20px;
+    text-align: right;
+            }
+nav a {
+       text-decoration : none;
+        color : white;
+        display: inline-block;
+        padding : 5px 20px;
+        padding-top: 10px;
+            }
+nav a:hover {
+            background-color : rgb(143, 142, 142);
+            }
+            nav img {
+                height: 90px;
+                float:left;
+                padding: 0px 20px;
+            }
+            nav .img{
+                position:fixed;
+            } 
+
+            :root{
+    --bg: #000;
+    --panel: #383737;
+    --muted: #cfcfcf;
+    --accent: #bdbdbd;
+  }
+  p {
+    color: white;
+  }
+  .intro-box 
+    img {
+        width: 100vh;
+        }
+</style>
+</head>
+
+<body>
+    <nav>
+        <img src="logo.png">
+            <a href="main.html">HOME</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="login.html">LOG IN</a>
+        </nav>
+
+        <div class="section">
+    <h1>SOLAR SYSTEM</h1>
+
+    <div class="intro-box">
+        <img src="solarsystem.jpg">
+        <p>
+            The Solar System is a vast and fascinating region of space containing the Sun,
+            eight planets, dwarf planets, moons, asteroids, comets, and distant icy bodies.
+            Formed around 4.6 billion years ago, it continues to evolve and reveal new
+            mysteries as we explore deeper into space.
+        </p>
+        <p>The Solar System consists of the Sun and the bodies that orbit it (most prominently Earth), being a system of masses bound together by gravity.
+            The name comes from Sōl, the Latin name for the Sun. It formed about 4.6 billion years ago when a dense region of a molecular cloud collapsed, 
+            creating the Sun and a protoplanetary disc from which the orbiting bodies assembled. The fusion of hydrogen into helium inside the Sun's core releases 
+            energy, which is primarily emitted through its outer photosphere. This creates a decreasing temperature gradient across the system. Over 99.86% of the 
+            Solar System's mass is located within the Sun.</p>
+    </div>
+</div>
+
+<h2>PLANETS</h2>
+
+<p>Planets are large, rounded celestial bodies orbiting a star, defined by clearing their orbital path and having enough mass to be nearly spherical, with our solar 
+    system having eight: rocky inner planets (Mercury, Venus, Earth, Mars) and gas/ice giants (Jupiter, Saturn, Uranus, Neptune), categorized by composition and distance 
+    from the Sun, with dwarf planets like Pluto being distinct</p>
+   <p>Our Solar System has eight major planets and several dwarf planets. Below are the 
+    primary planets arranged with a simple image and name layout.
+</p>
+
+<div class="planet-grid">
+
+    <a href="mercury.html"><div class="planet-card">
+        <img src="mercurylogo.png">
+        <div class="planet-title">Mercury</div>
+    </div></a>
+
+    <a href="venus.html"><div class="planet-card">
+        <img src="venuslogo.png">
+        <div class="planet-title">Venus</div>
+    </div></a>
+
+    <a href="earth.html"><div class="planet-card">
+        <img src="earthlogoo.png">
+        <div class="planet-title">Earth</div>
+    </div></a>
+
+    <a href="mars.html"><div class="planet-card">
+        <img src="marslogo.png">
+        <div class="planet-title">Mars</div>
+    </div></a>
+
+    <a href="jupiter.html"><div class="planet-card">
+        <img src="jupiterlogo.png">
+        <div class="planet-title">Jupiter</div>
+    </div></a>
+
+    <a href="saturn.html"><div class="planet-card">
+        <img src="saturn2logo.png">
+        <div class="planet-title">Saturn</div>
+    </div></a>
+
+    <a href="uranus.html"><div class="planet-card">
+        <img src="uranuslogo.png">
+        <div class="planet-title">Uranus</div>
+    </div></a>
+
+    <a href="neptune.html"><div class="planet-card">
+        <img src="neptunelogo.png">
+        <div class="planet-title">Neptune</div>
+    </div></a>
+
+    <a href="dwarf.html"><div class="planet-card">
+        <img src="dwarflogo.png">
+        <div class="planet-title">Dwarf Planets</div>
+    </div></a>
+
+</div>
+
+<h2>SUN</h2>
+
+<p>
+    The Sun is the heart of our Solar System. It provides the heat and light that makes life on
+    Earth possible and controls the movement of all objects within the system through its immense gravity.
+</p>
+
+<a href="sun.html">
+<div class="horizontal-card">
+    <img src="sun.png">
+    <div class="horizontal-content">
+        <div class="horizontal-title">THE SUN</div>
+        <p>The Sun is a massive glowing sphere of hot plasma and the central star of the Solar System.<br>
+        Click here to explore more about sun.</p>
+    </div>
+</div>
+</a>
+
+
+<h2>Asteroid Belt, Kuiper Belt & Oort Cloud</h2>
+
+<p>
+    These regions contain millions of rocky and icy bodies that orbit the Sun. They represent the
+    leftover building blocks of the Solar System.
+</p>
+
+<div class="two-card-row">
+
+    <a href="akbelt.html"><div class="vertical-info-card">
+        <img src="asb.jpg">
+        <div class="vertical-info-title">Asteroid & Kuiper Belt</div>
+        <p>The Asteroid Belt lies between Mars and Jupiter, while the Kuiper Belt lies beyond Neptune.</p>
+    </div></a>
+
+    <a href="oort.html"><div class="vertical-info-card">
+        <img src="oort.jpg">
+        <div class="vertical-info-title">Oort Cloud</div>
+        <p>A distant spherical shell of icy objects believed to be the source of long-period comets.</p>
+    </div></a>
+
+</div>
+
+<h2>Famous Missions</h2>
+
+<p>
+    Space missions have expanded our understanding of planets, moons, asteroids, and the origins of the Solar System.<br>
+</p>
+
+<a href="mission.html">
+<div class="horizontal-card">
+    <img src="mission2.jpg">
+    <div class="horizontal-content">
+        <div class="horizontal-title">SPACE MISSIONS</div>
+        <p>From Voyager to New Horizons, humanity has explored the Solar System through powerful spacecraft.<br>
+        Learn more about famous missions of past years.</p>
+    </div>
+</div>
+</a>
+
+<h2>History of the Solar System</h2>
+
+<p>
+    The Solar System formed 4.6 billion years ago from a collapsing gas cloud. This led to the Sun forming at the center
+    while planets, moons, and asteroids formed from the remaining disk of dust and gas.
+</p>
+
+<a href="history.html">
+<div class="horizontal-card">
+    <img src="solnebula.jpg">
+    <div class="horizontal-content">
+        <div class="horizontal-title">SOLAR SYSTEM HISTORY</div>
+        <p>Learn how the planets were formed, how the Solar System evolved, and what its future holds.</p>
+    </div>
+</div>
+</a>
+
+</body>
+</html>
